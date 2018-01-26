@@ -1,0 +1,13 @@
+1.Open dbconnection\MakeConnection.java 
+2.Provide username and password of mysql in the following lines
+(There are two lines which needs to be edited line 14 and 37)
+conn = DriverManager.getConnection("jdbc:mysql://localhost:3306", "username", "password");
+Save it  and close the file
+
+3.Open cmd prompt and go to the folder where MainClass.java is present
+4.Compile it using following command
+javac model\*.java dbconnection\*.java MainClass.java
+
+5.run it
+java -cp ./mysql-connector-java-5.1.42-bin.jar;. MainClass
+
